@@ -1,0 +1,136 @@
+.shoplanding{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.shoplandhead{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A615E;
+}
+.shoplandhead h1{
+    text-transform: uppercase;
+    font-size: 8rem;
+    border-bottom: 10px solid #D77512;
+    border-radius: 5px;
+    text-align: center;
+    color: #A1C7C5;
+    font-family: Big Shoulders Display;
+    letter-spacing: 15px;
+}
+.shoplandimg{
+    height: 70vh;
+    width: 100%;
+}
+.shoplandimg img{
+    height: 100%;
+    width: 100%;
+}
+.lightprods{
+    height: 100%;
+    width: 100%;
+    background-color: #A1C7C5;
+}
+.lightprods .shoplandhead, .furniture .shoplandhead{
+    background-color: #A1C7C5;
+}
+.lightprods .shoplandhead h1, .furniture .shoplandhead h1{
+    color: #2A615E;
+
+}
+.lightsec, .decorsec, .furnsec{
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding-left: 120px;
+}
+.decorsec{
+    background-color: #2A615E;
+}
+.furnsec{
+    background-color: #A1C7C5;
+}
+
+@media (max-width: 1250px){
+    .shoplandhead h1{
+    font-size: 7.5rem;
+    border-bottom: 10px solid #D77512;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 15px;
+    }
+
+    .lightsec, .decorsec, .furnsec{
+        padding-left: 0px;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 1000px){
+    .shoplandhead h1{
+    font-size: 5.5rem;
+    border-bottom: 10px solid #D77512;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 12px;
+    }
+
+    .lightsec, .decorsec, .furnsec{
+        padding-left: 0px;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 820px){
+    .shoplandhead h1{
+    font-size: 5.5rem;
+    border-bottom: 10px solid #D77512;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 12px;
+    }
+
+    .lightsec, .decorsec, .furnsec{
+        padding-left: 0px;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media (max-width: 590px){
+    .shoplandhead h1{
+    font-size: 3.5rem;
+    border-bottom: 10px solid #D77512;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 12px;
+    }
+
+    .lightsec, .decorsec, .furnsec{
+        padding-left: 0px;
+        justify-items: center;
+        grid-template-columns: 1fr;
+    }
+
+    .servicespage h1, .shoplanding .topsection-servicespage h1 {
+        position: absolute;
+        bottom: 0;
+        text-align: left;
+        background: linear-gradient(to left, transparent, black);
+        color: #D77512;
+        /* align-items: flex-end; */
+        font-size: 65px;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+        font-family: Big Shoulders Display;
+    }
+}
